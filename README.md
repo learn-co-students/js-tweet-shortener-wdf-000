@@ -5,7 +5,19 @@ tags: objects, iteration, regex
 
 # Tweet Shortener
 
-In this lab, we'll be using a javascript object with functions attached. A function on an object is called a method, but it does the same thing. The set up in this lab mirrors creating module methods in ruby.
+Instead of using prototypes and constructors in this lab, we'll be using a javascript object with functions attached. A function on an object is called a method, but it does the same thing. 
+
+In Ruby, modules can be used to hold methods that act on the values passed to it, and nothing else. 
+
+``` ruby
+module StringFancifier
+  def self.make_fancy(string)
+    "<*-~/#{string}/~=*>"
+  end
+end
+```
+
+`.make_fancy` only knows about the argument passed, and has no internal state.
 
 You'll see:
 
