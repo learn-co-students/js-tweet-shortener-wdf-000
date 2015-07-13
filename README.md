@@ -1,8 +1,3 @@
----
-languages: javascript
-tags: objects, iteration, regex
----
-
 # Tweet Shortener
 
 Instead of using prototypes and constructors in this lab, we'll be using a javascript object with functions attached. A function on an object is called a method, but it does the same thing. 
