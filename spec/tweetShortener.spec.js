@@ -44,7 +44,7 @@ describe('tweetShortener', function() {
     expect(shortenedTweet.length).toEqual(140);
     // checking if the string ends in '...'
     expect(shortenedTweet.indexOf('...', shortenedTweet.length - '...'.length)).not.toEqual(-1);
-    // check if the string includes '2' instead of 'to'
+    // check if the string includes 'u' instead of 'you'
     expect(shortenedTweet).toContain(' u ');
   });
 
