@@ -1,10 +1,10 @@
 # Tweet Shortener
 
-Instead of using prototypes and constructors in this lab, we'll be using a javascript object with functions attached. A function on an object is called a method, but it does the same thing. 
+Instead of using prototypes and constructors in this lab, we'll be using a JavaScript object with functions attached. A function on an object is called a method, but it does the same thing. 
 
 In Ruby, modules can be used to hold methods that act on the values passed to it, and nothing else. 
 
-``` ruby
+```ruby
 module StringFancifier
   def self.make_fancy(string)
     "<*-~/#{string}/~=*>"
@@ -16,7 +16,7 @@ end
 
 You'll see:
 
-``` javascript
+```javascript
 var tweetShortener = {
     wordSubstituter: function(){},
     bulkShortener: function(){},
@@ -25,8 +25,9 @@ var tweetShortener = {
 };
 ```
 
-This would look something like this in ruby:
-``` ruby
+This would look something like this in Ruby:
+
+```ruby
 module TweetShortener
   def self.word_substituter; end
   def self.bulk_shortener; end
@@ -84,6 +85,7 @@ and here is the list of tweets:
 
 
 To run the specs follow these commands:
+
 ```shell
 # first install the new gem to run the tests
 gem sources -a http://flatiron:33west26@gems.flatironschool.com
@@ -95,3 +97,5 @@ learn
 #to run in the browser
 learn -b
 ```
+
+<a href='https://learn.co/lessons/js-tweet-shortener' data-visibility='hidden'>View this lesson on Learn.co</a>
