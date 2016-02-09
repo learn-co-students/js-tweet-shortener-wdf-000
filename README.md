@@ -1,45 +1,5 @@
 # Tweet Shortener
 
-Instead of using prototypes and constructors in this lab, we'll be using a JavaScript object with functions attached. A function on an object is called a method, but it does the same thing. 
-
-In Ruby, modules can be used to hold methods that act on the values passed to it, and nothing else. 
-
-```ruby
-module StringFancifier
-  def self.make_fancy(string)
-    "<*-~/#{string}/~=*>"
-  end
-end
-```
-
-`.make_fancy` only knows about the argument passed, and has no internal state.
-
-You'll see:
-
-```javascript
-var tweetShortener = {
-    wordSubstituter: function(){},
-    bulkShortener: function(){},
-    selectiveShortener: function(){},
-    shortenedTruncator: function(){},
-};
-```
-
-This would look something like this in Ruby:
-
-```ruby
-module TweetShortener
-  def self.word_substituter; end
-  def self.bulk_shortener; end
-  def self.selective_shortener; end
-  def self.shortened_truncator; end
-end
-```
-
-We're creating an object that has these methods as singletons.
-
-On we go.
-
 ## Instructions
 
 A client has hired you to automatically post some of their brand messages to twitter, but the problem is that some of the tweets are too long. Your job is to automatically shorten them by replacing longer words with shorter representations (i.e. "two" becomes "2").
