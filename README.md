@@ -1,8 +1,8 @@
 # Tweet Shortener
 
-Instead of using prototypes and constructors in this lab, we'll be using a JavaScript object with functions attached. A function on an object is called a method, but it does the same thing. 
+Instead of using prototypes and constructors in this lab, we'll be using a javascript object with functions attached. (You'll sometimes hear this referred to as "object literal" notation, because it uses an object — literally.)
 
-In Ruby, modules can be used to hold methods that act on the values passed to it, and nothing else. 
+In Ruby, modules can be used to hold methods that act on the values passed to it, and nothing else.
 
 ```ruby
 module StringFancifier
@@ -14,7 +14,7 @@ end
 
 `.make_fancy` only knows about the argument passed, and has no internal state.
 
-You'll see:
+In lib/tweetShortener.js, you'll see:
 
 ```javascript
 var tweetShortener = {
@@ -25,7 +25,7 @@ var tweetShortener = {
 };
 ```
 
-This would look something like this in Ruby:
+This would look something like the following in ruby:
 
 ```ruby
 module TweetShortener
@@ -36,8 +36,6 @@ module TweetShortener
 end
 ```
 
-We're creating an object that has these methods as singletons.
-
 On we go.
 
 ## Instructions
@@ -46,7 +44,7 @@ A client has hired you to automatically post some of their brand messages to twi
 
 You'll want to write a method that will take a tweet, search it for words that you can substitute, and return a substituted string tweet. For instance, the tweet "Hello to you, I'm at home" would become "Hi 2 u, I'm @ home". The client has provided the following acceptable substitutes.
 
-```
+```bash
 "hello" becomes 'hi'
 "to, two, too" become '2'
 "for, four" become '4'
@@ -86,7 +84,7 @@ and here is the list of tweets:
 
 To run the specs follow these commands:
 
-```shell
+```bash
 # first install the new gem to run the tests
 gem sources -a http://flatiron:33west26@gems.flatironschool.com
 gem install learn-co
@@ -98,4 +96,4 @@ learn
 learn -b
 ```
 
-<a href='https://learn.co/lessons/js-tweet-shortener' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-tweet-shortener' title='Tweet Shortener'>Tweet Shortener</a> on Learn.co and start learning to code for free.</p>
