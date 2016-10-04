@@ -1,0 +1,45 @@
+'use strict';
+
+var tweetShortener = {
+  wordSubstituter: function(tweet){
+    var str = tweet.split(" ")
+    for (var i = 0, len = str.length; i < len; i++) {
+     switch (str[i]) {
+       case 'to':
+         str[i] = "2"  
+         break;
+       case 'be':
+         str[i] = "b"  
+         break;
+       case 'at':
+         str[i] = "@"  
+         break;
+       case 'you':
+         str[i] = "u"  
+         break;
+       case 'two':
+         str[i] = "2"  
+         break;
+       
+       default:
+         
+     } 
+    }    
+    return str.join(" ")
+  },
+  bulkShortener: function(arr){
+    for (var i = 0, len = arr.length; i < len; i++) {
+      var tmp = arr[i];
+      arr[i] = wordSubstituter(tmp);
+    } 
+    return arr; 
+  },
+  selectiveShortener: function(){},
+  shortenedTruncator: function(){}
+};
+
+
+
+if (tweetShortener.wordSubstituter(tweet) == (substituded_tweet)) {
+  console.log("my vimrc has conflicts");
+}
